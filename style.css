@@ -8,6 +8,12 @@ body {
   font-family: 'overpass', 'ubuntu';
   font-style: normal;
 }
+.part_1{
+  padding: 56px 24px 125px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .part_1{
   background-image: url(Assets/background_mask.png);
@@ -17,16 +23,24 @@ body {
   max-width:1440px;
 }
 
+
 .nav_container{
-  padding:56px 24px 110px 24px;
+  padding-top: 56px;
+  padding-left: 24px;
+  padding-bottom:110px;
+  padding-right: 24px;
+  justify-content: center;
+  align-items: center;
 }
 .left_section{
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  padding-top: 56px;
-  padding-left: 24px; ;
-  padding-right: 84px;
+}
+
+.Menu_nav{
+  width: 32px;
+ height: 18px;
 }
 
 .logo{
@@ -34,10 +48,7 @@ body {
 height: 32px;
 }
 
-.Menu_nav{
-  width: 32px;
- height: 18px;
-}
+
 
 .nav_links{
   display: none;
@@ -60,9 +71,9 @@ height: 32px;
 .header_text {
   justify-content: center;
   text-align: center;
-  padding-top: 198px;
+ /* padding-top: 198px;
   padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 24px;*/
   gap: 24px;
   line-height: normal;
 }
@@ -90,7 +101,12 @@ height: 32px;
     flex-direction: row;
     gap:16px;
     justify-content: center;
-    margin:48px auto;
+    padding-top: 64px;
+    text-align: right;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .button_1{
@@ -100,12 +116,6 @@ height: 32px;
   background: #FFF;
   border: none;
   color: #FF505C;
-  text-align: right;
-  font-family: 'Ubuntu';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   padding-right: 20px;
   cursor: pointer;
 }
@@ -118,43 +128,47 @@ height: 32px;
     border: 1px;
     border-color: #FFF;
     color: white;
-    text-align: right;
-    font-family: 'Ubuntu';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+
     padding-right: 20px;
     background: #FF505C;
     cursor: pointer;
 }
 
-.mask{
-  max-width: 1440px;
-    width: 100%;
-    max-height: 600px;
-    position: absolute;
-    top:0px;
-    z-index: -1;
-}
+
 .part_2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Dm {
+.Dm h6 {
   padding-top: 100px;
   padding-left: 24px;
-  padding-right: 24px;
   padding-bottom: 92px;
+  padding-right: 24px;
   color: #1F3E5A;
   text-align: center;
   font-family: 'Overpass SemiBold';
   font-size: 28px;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: -0.84px;
+}
+
+.content{
+  display: flex;
+    flex-direction: column;
+    gap:101px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
 }
 
 .first_subtext {
@@ -162,14 +176,16 @@ height: 32px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
   padding-right: 24px;
   padding-left: 33px;
+  font-family: 'Overpass';
+  
 }
 
 .first_subtext h6 {
   color: #1F3E5A;
   text-align: center;
-  font-family: 'Overpass SemiBold';
   font-size: 28px;
   font-weight: 600;
   line-height: 32px;
@@ -179,56 +195,56 @@ height: 32px;
 .first_subtext p {
   color: #4C5862;
   text-align: center;
-  font-family: 'Overpass';
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.5px;
+  padding-top: 16px;
 }
 
+.part_3{
+  padding: 50px 24px 220px 24px;
+  position: relative;
+}
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 101px;
 }
-.section3{
-  padding: 50px 24px 220px 24px;
-  position: relative;
-}
-.phones img{
-  
-  max-width: 472px;
-  width:100%;
+
+.grouped_phones img{
   max-height: 499px;
   height: 100%;
-  
-}
-.phones{
-  display: flex;
-  justify-content: center;
+  max-width: 472px;
+  width:100%;
 }
 
-.phonesSide{
+
+.collection{
   display: flex;
   flex-direction: column;
-  gap:48.31px;
+  gap:48px;
   max-height: 600px;
   height: 100%;
 }
 
-.phonesSentence{
+.grouped_phones{
+  display: flex;
+  justify-content: center;
+}
+
+.phone_content{
   display: flex;
   flex-direction: column;
   gap:10px;
   align-items: center;
-}
-.phonesSentence h3{
   color: #FFF;
   text-align: center;
   font-family: 'Overpass';
+}
+.phone_content h6{
   font-size: 40px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -1.2px;
@@ -236,69 +252,76 @@ height: 32px;
   height: 100%;
   
 }
-.phonesSentence p{
-  color: #FFF;
-  text-align: center;
-  font-family: 'Overpass';
+.phone_content p{
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.5px;
   max-width: 540px;
   width: 100%;
-  
 }
   
-.gradient_2 img{
+
+
+.backdrop img{
   position: absolute;
   top:110px;
   left:0px;
+  z-index: -1;
   max-width: 1440px;
   width:100%;
   max-height: 725px;
   height: 100%;
-  z-index: -1; 
-}
-.section4{
-  padding:156px 24px 125px 24px;
-  display: flex;
-  justify-content: center;
+   
 }
 
-.desktopside img{
+.laptop_image img{
   max-width: 699px;
   width: 100%;
   max-height: 403px;
   height: 100%; 
+  justify-content: center;
+  align-items: center;
 }
-.desktopText{
+
+
+.part_4{ padding-top: 220px;
+         padding-bottom: 350px;
+         padding-left: 20px;
+         padding: 20px;
+        }
+        
+.main_text{
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  padding-bottom: 40pxs;
+}
+
+.main_text{
   max-width: 504px;
   width: 100%;
   max-height: 416px;
   height: 100%;
 }
-.desktop{
+.Frame{
   display: flex;
   flex-direction: column;
   gap:115px;
+  justify-content: center;
+  align-items: center;
 }
-.desktopText{
-  display: flex;
-  flex-direction: column;
-  gap:40px;
-}
-.deskText{
+
+.inner_text{
   display: flex;
   flex-direction: column;
   gap:16px;
 }
-.deskText h3{
+.inner_text h5{
   color: #1F3E5A;
   text-align: center;
   font-family: 'Overpass';
   font-size: 28px;
-  font-style: normal;
   font-weight: 600;
   line-height: 32px;
   max-width: 540px;
@@ -306,7 +329,7 @@ height: 32px;
   max-height: 41px;
   height: 100%;
 }
-.deskText p{
+.inner_text p{
   color: #4C5862;
   text-align: center;
   font-family: 'Overpass';
@@ -319,23 +342,41 @@ height: 32px;
   width:100% ;
   height:100% ;
 }
+
+
+
+.inner_text.source{
+  padding-bottom: 40px;
+}
+
+/*footer section*/
 footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #24242C;
   border-radius: 0px 100px 0px 0px;
-  padding: 75px 137px;
+  padding-bottom: 150px;
+  padding-top: 150px;
   max-width: 1440px;
-  width:100%;
-  height: 100%;
+
 }
-.Blogr{
-  color: #ffffff;
+.image_logo{
   display: flex;
+  flex-direction: column;
   justify-content:center;
   align-items: center;
   max-width: 101px;
   width: 100%;
   max-height: 40px;
   height: 100%;
+  color: #ffffff;
+
+}
+
+.image_logo img{
+  padding-top: 65px;
 }
 .footer_nav{
   display: flex;
@@ -345,41 +386,42 @@ footer{
 .foot_link{
   display: flex;
   flex-direction: column;
-  gap:40px
+  gap:40px;
 }
-.list{
+.sub_nav{
   display: flex;
   flex-direction: column;
-  gap:21px;
   justify-content: center;
+  gap:21px;
 }
-ul{
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-}
-.list h4{
+ 
+.sub_nav h5{
   color: #FFF;
   text-align: center;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 33px;
 }
+
+  
+ul{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  }
 ul a{
   color: #FFF;
   text-align: center;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 33px;
   opacity: 0.75;
   text-decoration: none;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 935px) {
 
 /*styling the contents in the first section(part_1)*/
 .Menu_nav{ display: none;}
@@ -391,11 +433,15 @@ ul a{
 }*/
 
 .main_container{
-  padding:63px 167px 155px 167px;
+  padding-top: 7px;
+  padding-left: 167px;
+  padding-bottom: 155px;
+  padding-right: 167px;
+  justify-content: center;
 }
- .nav_links{
+ /*.nav_links{
   display: block;
- }
+ } */
  .inner_nav{
   display: flex;
   flex-direction: row;   
@@ -406,24 +452,26 @@ ul a{
   display: flex;
   flex-direction: row;
   gap:200px;
+  justify-content: center;
+  align-items: center;
 }
  
-.left_section{
-  padding-left: 100px;
-  padding-top: 7px;
-}
-  .middle_section{
+
+.middle_section{
     display: flex;
     flex-direction: row;
      gap: 48px;
      align-items:center;
-     margin: 5px auto;
-  }
+     margin: 0 auto;
+     justify-content: space-between;
+ }
 
   .right_section{
     display: flex;
     flex-direction: row;
     gap: 32px;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -450,7 +498,6 @@ ul a{
       color: #FF505C;
       text-align: right;
       cursor: pointer;
-      border-color: #FFF;
       font-family: 'Ubuntu';
       font-size: 16px;
       font-style: normal;
@@ -458,6 +505,7 @@ ul a{
       line-height: normal;
       width: 100px;
       height: 35px;
+      border: none;
   }
 
   .sign_in_button:hover {
@@ -475,7 +523,7 @@ ul a{
 
 /*new changes for the h6 and p tag in section 1*/
 .header_text {
- padding-top: 198px;
+ /*padding-top: 198px;*/
   padding-left: 260px;
   padding-right: 260px;
   padding-top: 141px;}
@@ -507,7 +555,19 @@ ul a{
   background: #FF505C;
   color: #FFF;
 }
-    
+.second_section{
+  display: flex;
+  flex-direction: column;
+  gap:93px;
+}
+.second_section .Dm h6{
+text-align: center;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.2px;
+}
 .content{
   display: flex;
   flex-direction: row-reverse;
@@ -523,70 +583,77 @@ ul a{
 }
 .first_subtext p{
   color: #4C5862;
-  font-family: Overpass;
+  font-family: 'Overpass';
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.5px;
 }
-.second_section{
-  display: flex;
-  flex-direction: column;
-  gap:93px;
-}
+
     
-.section3{
+.part_3{
   padding:100px 0px 0px 165px;
 }
 
-.phonesSide{
+.collection{
 display: flex;
 flex-direction: row;
 }
-.gradient_2 img{
+.backdrop img{
 max-width: 1440px;
 width: 100%;
 max-height: 400px;
 height: 100%;
 }
 
-.phonesSentence{
-padding: 111px 165px 111px 20px;
-display: flex;
+.phone_content{
+  display: flex;
 align-items: center;
+padding: 111px 165px 111px 20px;
 margin: 0 auto;
 
 }
-.phonesSentence p{
-color: #FFF;
-font-family: Overpass;
+
+.phone_content{
+  display: flex;
+    align-items: center;
+    margin: 0 auto;
+  padding: 111px 165px 111px 20px;
+    
+}
+.phone_content h6{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  white-space: nowrap;
+  }
+
+.phone_content p{
 font-size: 16px;
-font-style: normal;
 font-weight: 300;
 line-height: 28px;
 letter-spacing: 0.5px;
 text-align: justify;
 }
-.phonesSentence h3{
-color: #FFF;
-font-family: 'Overpass';
-font-size: 40px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -1.2px;
-white-space: nowrap;
-}
-.desktop{
+
+
+.part_4{
+  padding: 301px 165px 308px 0px;
+  }
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+  }
+.Frame{
 display: flex;
 flex-direction: row;
 gap:207px;
 }
-.section4{
-padding: 301px 165px 308px 0px;
-}
-.deskText h3{
+.inner_text h5{
 color: #1F3E5A;
 font-family: 'Overpass';
 font-size: 28px;
@@ -596,7 +663,7 @@ line-height: 28px;
 display: flex;
 align-items: center ;
 }
-.deskText p{
+.inner_text p{
 color: #4C5862;
 font-family: 'Overpass';
 font-size: 16px;
@@ -606,27 +673,29 @@ line-height: 28px;
 letter-spacing: 0.5px;
 text-align: left; 
 }
-.desktopText{
-display: flex;
-flex-direction: column;
-gap:64px;
+
+.source{
+  padding-bottom: 40px;
 }
 
-.battery{
+.breeze{
 color: #4C5862;
-font-family: Overpass;
+font-family: 'Overpass';
 font-size: 16px;
-font-style: normal;
 font-weight: 300;
 line-height: 28px;
 letter-spacing: 0.5px;
+padding-bottom: 40px;
 }
 .footer_nav{
   display: flex;
   flex-direction: row;
   gap:184px
 }
+
 footer{
+  display: flex;
+  flex-direction: row;
   max-width: 1440px;
   width:100%;
   height: 100%;
@@ -636,21 +705,24 @@ footer{
 .foot_link{
   display: flex;
   flex-direction: row;
-  gap:184px;
+  gap: 150px;px;
 }
-.list h4{
-  color: #FFF;
-font-family: Ubuntu;
+
+.sub_nav h5{
 font-size: 15px;
-font-style: normal;
 font-weight: 500;
 line-height: 33px;
 }
+
+.sub_nav ul{
+  max-width: 255px;
+  width: 100%;
+  max-height: 165px;
+  height: 100%;
+}
+
 ul a{
-  color: #FFF;
-font-family: 'Ubuntu';
 font-size: 15px;
-font-style: normal;
 font-weight: 400;
 line-height: 33px;
 opacity: 0.75;
@@ -659,11 +731,6 @@ opacity: 0.75;
   text-decoration: underline;
   cursor: pointer;
 }
-.list ul{
-  max-width: 255px;
-  width: 100%;
-  max-height: 165px;
-  height: 100%;
-}
+
     
 }
